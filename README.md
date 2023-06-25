@@ -30,8 +30,4 @@
 
 ---
 
-####
-
-![Alt text](./Python_Bot.png "Look")
-
-> _I am just start it project and funnest thing is I have not proper idea about it by i try and never give up._
+<!-- ![Alt text](./Python_Bot.png "Look") -->
