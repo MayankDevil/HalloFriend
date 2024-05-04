@@ -4,9 +4,9 @@
 
 import time
 
-from personal import Personal
+from personality import Person
 
-class Hallo(Personal):
+class Hallo(Person):
 
 
      # gender function ---
