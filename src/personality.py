@@ -10,6 +10,7 @@ class Person:
 
 	# constructor ---
 	def __init__(self):
+		self.developer = 'MAYANK'
 		self.name = ""
 		self.sex = 0
 		self.friend = ""
@@ -17,6 +18,8 @@ class Person:
 		self.likeShe = False
 		self.hasMale = False
 		self.hasDeveloper = False
+		self.number = None
+		self.isVirgin = True
 
 
 	# choice function ---
@@ -31,15 +34,22 @@ class Person:
 
 
 	# introduction function ---
-     def ami(self):
-          if self.hasDeveloper:
-               print("\n-\tI am your, whore master")
-          else:
-               print("\n-\t let me tell about myself.")
-               time.sleep(2)
-               print("\n\t i am (Attempt Listen In Simple Humanoid Application)")
-               input(" : ")
-               print("\t\t You are call me, ALISHA")
+	def ami(self):
+		if self.hasDeveloper:
+			if self.name.upper == 'Devil':
+				print("\n-\t Ich bin deine Schlampe") # i am you bitch
+			else:
+				print("\n-\t Ich bin Ihr Assistent") # I am your assistant
+		else:
+			print("\n-\t let me tell about myself.")
+			time.sleep(2)
+			print("\n\t i am (Attempt Listen In Simple Humanoid Application)")
+			input(" : ")
+			print("\n\t You are call me, ALISHA")
+		if self.hasDeveloper:
+			print("\n\t Erlaubnis verweigert, also gehen")	# permission denied so leave
+		else:
+			self.getNumber()
 
 
 	# enter name function ---
@@ -52,10 +62,13 @@ class Person:
 
 	# is Developer function ---
 	def isDeveloper(self, name):
-		if name.upper() == 'MAYANK' or name.upper() == 'DEVIL':
+		if name.upper() == self.developer or name.upper() == 'DEVIL':
 			self.hasDeveloper = True
 			self.hasMale = True
-			print("\n\t Welcome Sinilich MutterFicker)") # welcome sexy motherfucker
+			if name.upper() == 'DEVIL':
+				print("\n\t Welcome Sinilich MutterFicker :)") # welcome sexy motherfucker
+			else:
+				print("\n\t Willkommen Meister") # welcome master
 		else:
 			print("\n\t"+name+", Good Name")
 			self.gender()
@@ -70,7 +83,7 @@ class Person:
 			sys.stdout.flush()
 			idx += 1
 			time.sleep(0.1)
-		print("\b successed!")
+		print("\b successed! \n")
 
 
 	# loader function ---
